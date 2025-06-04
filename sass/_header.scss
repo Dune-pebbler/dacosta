@@ -1,0 +1,62 @@
+header {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  background-color: $white;
+  width: 100%;
+  @media screen and (max-width: 576px) {
+    padding-bottom: 50px;
+  }
+
+  .content-header {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 178px;
+    z-index: 1000;
+    @media screen and (max-width: 576px) {
+      height: 120px;
+      padding-top: 20px;
+    }
+
+    .logo {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 320px;
+      display: inline-block;
+      z-index: 1000;
+      @media screen and (max-width: 576px) {
+        transform: translateX(-50%);
+        width: 50%;
+      }
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    .repeater-wrapper {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      position: relative;
+      gap: 22px;
+      @media screen and (max-width: 576px) {
+        gap: 10px;
+      }
+      @media screen and (max-width: 400px) {
+        padding-top: 0px;
+      }
+      .repeater-item {
+        img {
+          height: 50px;
+          @media screen and (max-width: 576px) {
+            height: 30px;
+          }
+        }
+      }
+    }
+  }
+}

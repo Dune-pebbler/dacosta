@@ -1,0 +1,342 @@
+.hero {
+  padding-top: 90px;
+  padding-bottom: 160px;
+  @media screen and (max-width: 1400px) {
+    padding-top: 170px;
+  }
+  @media screen and (max-width: 576px) {
+    padding-top: 130px;
+    padding-bottom: 80px;
+  }
+
+  .images-hero {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    position: relative;
+
+    .desktop-images {
+      display: flex;
+      gap: 20px;
+      width: 100%;
+      position: relative;
+
+      @media screen and (max-width: 1400px) {
+        display: none;
+      }
+    }
+
+    .mobile-carousel {
+      display: none;
+      width: 100%;
+
+      @media screen and (max-width: 1400px) {
+        display: block;
+      }
+
+      .carousel-item {
+        height: 600px;
+        @media screen and (max-width: 1800px) {
+          height: 500px;
+        }
+        @media screen and (max-width: 768px) {
+          height: 400px;
+        }
+        @media screen and (max-width: 576px) {
+          height: 300px;
+        }
+      }
+
+      .hero-carousel-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+
+      // Owl Carousel navigation styling
+      .owl-nav {
+        position: absolute;
+        top: 40%;
+        transform: translateY(-50%);
+        width: 100%;
+
+        .owl-prev,
+        .owl-next {
+          position: absolute;
+          background: rgba(169, 114, 70, 0.8) !important;
+          color: white !important;
+          border-radius: 50%;
+          width: 50px;
+          height: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 18px;
+          transition: all 0.3s ease;
+
+          &:hover {
+            background: rgba(169, 114, 70, 1) !important;
+            transform: scale(1.1);
+          }
+
+          @media screen and (max-width: 768px) {
+            width: 40px;
+            height: 40px;
+            font-size: 14px;
+          }
+        }
+
+        .owl-prev {
+          left: 20px;
+        }
+
+        .owl-next {
+          right: 20px;
+        }
+      }
+
+      // Owl Carousel dots styling
+      .owl-dots {
+        text-align: center;
+        margin-top: 20px;
+
+        .owl-dot {
+          display: inline-block;
+          margin: 0 5px;
+
+          span {
+            width: 12px;
+            height: 12px;
+            background: rgba(169, 114, 70, 0.5);
+            border-radius: 50%;
+            display: block;
+            transition: all 0.3s ease;
+          }
+
+          &.active span,
+          &:hover span {
+            background: rgb(169, 114, 70);
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
+
+    .golfje1 {
+      @media screen and (max-width: 1400px) {
+        display: none;
+      }
+      position: absolute;
+      top: -15px;
+      right: 0;
+      width: 100%;
+      z-index: 100;
+    }
+
+    .golfje2 {
+      position: absolute;
+      bottom: -100px;
+      right: 0;
+      width: 100%;
+      @media screen and (max-width: 1400px) {
+        display: none;
+      }
+    }
+
+    .image-container-left,
+    .image-container-right {
+      width: calc(50% - 10px);
+      height: 741px;
+      position: relative;
+      @media screen and (max-width: 1800px) {
+        max-height: 600px;
+        padding-top: 60px;
+      }
+
+      .hero-image-left {
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .hero-image-right {
+        position: absolute;
+        top: 40px;
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .text-container {
+      position: absolute;
+      bottom: -50px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 0px 20px 0px 20px;
+      background-color: rgb(169, 114, 70);
+      border-radius: 20px;
+      max-width: 700px;
+      z-index: 200;
+
+      @media screen and (max-width: 767px) {
+        padding: 0px 10px 30px 10px;
+        bottom: 0px;
+      }
+      @media screen and (max-width: 576px) {
+        width: 75%;
+        padding: 0px 5px 30px 5px;
+      }
+
+      h1 {
+        text-align: center;
+        margin: 0;
+        color: white;
+        padding-top: 20px;
+        font-weight: 300 !important;
+        @media screen and (max-width: 767px) {
+          font-size: 27px;
+        }
+        @media screen and (max-width: 576px) {
+          font-size: 20px;
+        }
+      }
+
+      p {
+        text-align: left;
+        padding: 0px 0px 0px 40px;
+        font-weight: 300;
+        margin: 0;
+        padding-bottom: 50px;
+        @media screen and (max-width: 767px) {
+          display: none;
+        }
+      }
+
+      .btn-primary {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: -12%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-family: $font2;
+        font-weight: 300;
+        font-size: 25px;
+        @media screen and (max-width: 767px) {
+          font-size: 18px;
+        }
+
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.content-text-block {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 80px;
+  @media screen and (max-width: 576px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  h1 {
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  .image-container {
+    position: absolute;
+
+    .vlekjes {
+      &.vlekjes {
+        @media screen and (max-width: 1400px) {
+          top: -265px;
+          left: -230px;
+        }
+        @media screen and (max-width: 1200px) {
+          top: -310px;
+          left: -220px;
+        }
+        @media screen and (max-width: 992px) {
+          top: -170px;
+          left: -270px;
+        }
+        @media screen and (max-width: 767px) {
+          top: -180px;
+          left: -230px;
+        }
+        @media screen and (max-width: 575px) {
+          top: -170px;
+          left: -230px;
+        }
+        @media screen and (max-width: 500px) {
+          display: none;
+        }
+        position: absolute;
+        top: -225px;
+        left: -325px;
+      }
+
+      &.vlekjes_naar_beneden {
+        @media screen and (max-width: 1400px) {
+          top: -295px;
+          left: -200px;
+        }
+        @media screen and (max-width: 1200px) {
+          top: -325px;
+          left: -190px;
+        }
+        @media screen and (max-width: 992px) {
+          top: -165px;
+          left: -350px;
+        }
+        @media screen and (max-width: 767px) {
+          top: -180px;
+          left: -250px;
+        }
+        position: absolute;
+        left: -200px;
+        top: -255px;
+      }
+    }
+  }
+}
+
+.slider {
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  @media screen and (max-width: 1000px) {
+    padding-top: 0px;
+  }
+  .text-container {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    h2 {
+      color: #6a1137;
+    }
+  }
+}
+
+.afsluiter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 80px;
+}
