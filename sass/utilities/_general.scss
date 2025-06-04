@@ -32,25 +32,29 @@
 }
 .half-page-left {
   position: absolute;
-  left:0;
-  top:0;
-  bottom:0;
-  width:50%;
-  @media (max-width: $screen-lg-max){
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  @media (max-width: $screen-lg-max) {
     position: relative;
-    width:100%;
-    height:420px;
+    width: 100%;
+    height: 420px;
   }
 }
-.half-page-right{
+.half-page-right {
   position: absolute;
-  right:0;
-  top:0;
-  bottom:0;
-  width:50%;
-  @media (max-width: $screen-lg-max){
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  @media (max-width: $screen-lg-max) {
     position: relative;
-    width:100%;
-    height:420px;
+    width: 100%;
+    height: 420px;
   }
+}
+
+.container-small {
+  max-width: 900px !important;
 }

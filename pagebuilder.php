@@ -16,6 +16,9 @@
         <?php if (get_row_layout() == 'afsluiter'): ?>
             <?php get_template_part('template-parts/blocks/afsluiter'); ?>
         <?php endif; ?>
+        <?php if (get_row_layout() == 'contactform'): ?>
+            <?php get_template_part('template-parts/blocks/contactform'); ?>
+        <?php endif; ?>
     <?php endwhile; ?>
 
 <?php endif; ?>

@@ -271,6 +271,37 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_68403d203a651": {
+                    "key": "layout_68403d203a651",
+                    "name": "contactform",
+                    "label": "Contactform",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_68403d4f3a653",
+                            "label": "Contact formulier",
+                            "name": "contact_formulier",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "allow_in_bindings": 0,
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "min": "",
@@ -296,5 +327,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1749029930
+    "modified": 1749040485
 }
