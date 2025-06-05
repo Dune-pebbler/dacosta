@@ -211,3 +211,22 @@ jQuery(document).ready(function ($) {
     initCarousel();
   });
 });
+
+inView(".hero").on("enter", (el) => {
+  el.classList.add("in-view");
+});
+
+inView(".contact-form").on("enter", (el) => {
+  el.classList.add("in-view");
+});
+
+inView(".text-block").on("enter", (el) => {
+  el.classList.add("in-view");
+});
+inView(".slider").on("enter", (el) => {
+  el.classList.add("in-view");
+});
+
+inView(".afsluiter").on("enter", (el) => {
+  el.classList.add("in-view");
+});

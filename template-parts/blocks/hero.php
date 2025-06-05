@@ -44,9 +44,7 @@ $hero_text_block = get_sub_field('hero_text_block');
                 <?php endif; ?>
                 <?php if ($hero_button): ?>
                     <div class="btn-primary">
-                        <a href="<?= $hero_button['url']; ?>" target="<?= $hero_button['target']; ?>">
-                            <?= $hero_button['title']; ?>
-                        </a>
+                        <a href="#contact-form" alt="knop naar contact form">AANMELDEN</a>
                     </div>
                 <?php endif; ?>
             </div>

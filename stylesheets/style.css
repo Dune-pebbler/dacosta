@@ -442,10 +442,61 @@ html {
   font-size: 16px;
   line-height: 1.5;
   color: #333b6f;
+  scroll-behavior: smooth;
 }
 body.menu-open,
 html.menu-open {
   overflow: hidden;
+}
+
+.hero {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.hero.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.contact-form {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.contact-form.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.text-block {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.text-block.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.slider {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.slider.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.afsluiter {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.afsluiter.in-view {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 header {
@@ -622,26 +673,6 @@ header .content-header .repeater-wrapper .repeater-item img {
 }
 .hero .images-hero .mobile-carousel .owl-nav .owl-next {
   right: 20px;
-}
-.hero .images-hero .mobile-carousel .owl-dots {
-  text-align: center;
-  margin-top: 20px;
-}
-.hero .images-hero .mobile-carousel .owl-dots .owl-dot {
-  display: inline-block;
-  margin: 0 5px;
-}
-.hero .images-hero .mobile-carousel .owl-dots .owl-dot span {
-  width: 12px;
-  height: 12px;
-  background: rgba(169, 114, 70, 0.5);
-  border-radius: 50%;
-  display: block;
-  transition: all 0.3s ease;
-}
-.hero .images-hero .mobile-carousel .owl-dots .owl-dot.active span, .hero .images-hero .mobile-carousel .owl-dots .owl-dot:hover span {
-  background: rgb(169, 114, 70);
-  transform: scale(1.2);
 }
 .hero .images-hero .golfje1 {
   position: absolute;
@@ -881,13 +912,27 @@ header .content-header .repeater-wrapper .repeater-item img {
 .slider .text-container h2 {
   color: #6a1137;
 }
+@media screen and (max-width: 576px) {
+  .slider .text-container {
+    font-size: 8px !important;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 80px;
+  }
+}
 
 .afsluiter {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
+  padding-top: 80px;
   padding-bottom: 80px;
+}
+@media screen and (max-width: 576px) {
+  .afsluiter {
+    padding-top: 40px;
+  }
 }
 
 footer {
@@ -1080,11 +1125,14 @@ p + .btn, p + .btn-secondary, p + .btn-outline {
   justify-content: center;
 }
 
+#input_1_10_2_container {
+  width: 13%;
+}
+
 #input_1_10_1_container,
-#input_1_10_2_container,
 #input_1_10_5_container,
 #input_1_10_6_container {
-  width: 25%;
+  width: 29%;
 }
 
 #gform_submit_button_1 {
@@ -1122,16 +1170,46 @@ label.gform-field-label.gfield_consent_label {
   font-weight: 300 !important; /* of 700 voor bold, 400 voor normaal */
 }
 
+#input_1_1_3_container {
+  width: 40% !important;
+}
+@media screen and (max-width: 767px) {
+  #input_1_1_3_container {
+    width: 100% !important;
+  }
+}
+
 #input_1_1_4_container {
+  width: 20% !important;
   display: flex;
-  justify-content: center;
+  flex: none;
+}
+@media screen and (max-width: 767px) {
+  #input_1_1_4_container {
+    width: 100% !important;
+  }
 }
 #input_1_1_4_container #input_1_1_4 {
-  width: 75%;
+  width: 100%;
+}
+
+#input_1_1_6_container {
+  width: 40% !important;
+  flex: none;
+}
+@media screen and (max-width: 767px) {
+  #input_1_1_6_container {
+    width: 100% !important;
+  }
 }
 
 #field_1_4 {
   width: 75%;
+}
+@media screen and (max-width: 767px) {
+  #field_1_4 {
+    width: 100%;
+  }
 }
 
 .gform-footer.gform_footer.top_label {
@@ -1144,4 +1222,34 @@ p a {
   text-decoration-color: #707070;
   text-underline-offset: 4px;
   color: black;
+}
+
+@media screen and (max-width: 767px) {
+  #input_1_10_1_container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #input_1_10_2_container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #input_1_10_5_container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #input_1_10_6_container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #input_1_4 {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */

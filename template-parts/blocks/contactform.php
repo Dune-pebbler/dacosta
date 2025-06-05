@@ -1,5 +1,5 @@
 <?php $gravform = get_sub_field('contact_formulier'); ?>
-<section class="gravform">
+<section class="contact-form" id="contact-form">
     <div class="container container-small">
         <div class="row">
             <?= $gravform; ?>
