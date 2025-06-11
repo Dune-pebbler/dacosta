@@ -1,7 +1,11 @@
+// ==============================
+// ALGEMENE STYLING FORMULIER
+// ==============================
 .gform_wrapper {
   .gform_heading {
     display: flex;
     justify-content: center;
+
     p {
       color: $color1;
       font-size: 41px;
@@ -9,6 +13,7 @@
       text-transform: uppercase;
     }
   }
+
   .gform-body {
     .gform_fields {
       .gfield {
@@ -23,6 +28,29 @@
     }
   }
 }
+
+// ==============================
+// FORMULIER BESCHRIJVING & RESPONSIVE HEADINGS
+// ==============================
+.gform_description {
+  @media screen and (max-width: 576px) {
+    font-size: 24px !important;
+  }
+}
+
+#field_1_5,
+#field_1_8,
+#field_1_11 {
+  @media screen and (max-width: 576px) {
+    h3 {
+      font-size: 20px !important;
+    }
+  }
+}
+
+// ==============================
+// INPUT FONT-STYLING
+// ==============================
 #input_1_4,
 #input_1_1_3,
 #input_1_1_4,
@@ -37,12 +65,20 @@
   font-family: $font2;
   font-weight: 300;
 }
+
+// ==============================
+// GECENTREERDE VELDEN
+// ==============================
 #field_1_5,
 #field_1_11,
 #field_1_8 {
   display: flex;
   justify-content: center;
 }
+
+// ==============================
+// BREEDTES SPECIFIEKE INPUTS
+// ==============================
 #input_1_10_2_container {
   width: 13%;
 }
@@ -52,6 +88,10 @@
 #input_1_10_6_container {
   width: 29%;
 }
+
+// ==============================
+// SUBMIT BUTTON STYLING
+// ==============================
 #gform_submit_button_1 {
   display: flex;
   justify-content: center;
@@ -61,16 +101,27 @@
   font-weight: 300;
   font-size: 25px;
   background-color: #192f2f;
-  border-radius: 10px;
+  border-radius: 20px;
+  padding: 0.7rem 1rem !important;
+
   @media screen and (max-width: 767px) {
     font-size: 18px;
   }
+
+  @media screen and (max-width: 576px) {
+    font-size: 18px !important;
+    padding: 0.5rem 1rem !important;
+    border-radius: 20px;
+  }
+
   a {
     text-decoration: none;
   }
 }
 
-//checkboxes
+// ==============================
+// CHECKBOXES
+// ==============================
 #input_1_7_1,
 #input_1_6_1 {
   border: #6a1137 1px solid;
@@ -83,44 +134,66 @@
 }
 
 label.gform-field-label.gfield_consent_label {
-  font-weight: 300 !important; /* of 700 voor bold, 400 voor normaal */
+  font-weight: 300 !important; // gebruik 700 voor bold, 400 voor normaal
 }
-// persoonsgegevens
+
+// ==============================
+// PERSOONSGEGEVENS INDELING
+// ==============================
 #input_1_1_3_container {
   width: 40% !important;
+
   @media screen and (max-width: 767px) {
     width: 100% !important;
   }
 }
+
 #input_1_1_4_container {
   width: 20% !important;
   display: flex;
   flex: none;
+
   @media screen and (max-width: 767px) {
     width: 100% !important;
   }
+
   #input_1_1_4 {
     width: 100%;
   }
 }
+
 #input_1_1_6_container {
   width: 40% !important;
   flex: none;
+
   @media screen and (max-width: 767px) {
     width: 100% !important;
   }
 }
+
 #field_1_4 {
   width: 75%;
+
   @media screen and (max-width: 767px) {
     width: 100%;
   }
 }
 
+// ==============================
+// FOOTER FORMULIER
+// ==============================
 .gform-footer.gform_footer.top_label {
   display: flex !important;
   justify-content: flex-end !important;
+
+  @media screen and (max-width: 576px) {
+    justify-content: center !important;
+  }
 }
+
+// ==============================
+// LINK STYLING IN PARAGRAFEN
+// ==============================
 p {
   a {
     text-decoration: underline;
@@ -129,29 +202,27 @@ p {
     color: black;
   }
 }
-//responsive
-#input_1_10_1_container {
-  @media screen and (max-width: 767px) {
-    width: 100%;
-  }
-}
-#input_1_10_2_container {
-  @media screen and (max-width: 767px) {
-    width: 100%;
-  }
-}
-#input_1_10_5_container {
-  @media screen and (max-width: 767px) {
-    width: 100%;
-  }
-}
-#input_1_10_6_container {
-  @media screen and (max-width: 767px) {
-    width: 100%;
-  }
-}
+
+// ==============================
+// RESPONSIVE INPUT BREEDTES
+// ==============================
+#input_1_10_1_container,
+#input_1_10_2_container,
+#input_1_10_5_container,
+#input_1_10_6_container,
 #input_1_4 {
   @media screen and (max-width: 767px) {
     width: 100%;
+  }
+}
+
+// ==============================
+// RESPONSIVE PARAGRAAF PADDING
+// ==============================
+.contact-form {
+  p {
+    @media screen and (max-width: 576px) {
+      padding-top: 25px;
+    }
   }
 }
