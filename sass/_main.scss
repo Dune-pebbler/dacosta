@@ -20,6 +20,52 @@
       gap: 20px;
       width: 100%;
       position: relative;
+      .image-container-left,
+      .image-container-right {
+        width: 100%;
+        height: 741px;
+        position: relative;
+        @media screen and (max-width: 1800px) {
+          max-height: 600px;
+          padding-top: 60px;
+        }
+
+        .hero-image-left {
+          z-index: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        .hero-image-right {
+          position: absolute;
+          top: 40px;
+          z-index: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .deco-wave-top {
+        @media screen and (max-width: 1400px) {
+          display: none;
+        }
+        position: absolute;
+        top: -15px;
+        right: 0;
+        width: 100%;
+        z-index: 100;
+      }
+
+      .deco-wave-bottom {
+        position: absolute;
+        bottom: -100px;
+        right: 0;
+        width: 100%;
+        @media screen and (max-width: 1400px) {
+          display: none;
+        }
+      }
 
       @media screen and (max-width: 1400px) {
         display: none;
@@ -93,54 +139,6 @@
         .owl-next {
           right: 20px;
         }
-      }
-    }
-
-    .golfje1 {
-      @media screen and (max-width: 1400px) {
-        display: none;
-      }
-      position: absolute;
-      top: -15px;
-      right: 0;
-      width: 100%;
-      z-index: 100;
-    }
-
-    .golfje2 {
-      position: absolute;
-      bottom: -100px;
-      right: 0;
-      width: 100%;
-      @media screen and (max-width: 1400px) {
-        display: none;
-      }
-    }
-
-    .image-container-left,
-    .image-container-right {
-      width: calc(50% - 10px);
-      height: 741px;
-      position: relative;
-      @media screen and (max-width: 1800px) {
-        max-height: 600px;
-        padding-top: 60px;
-      }
-
-      .hero-image-left {
-        z-index: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-
-      .hero-image-right {
-        position: absolute;
-        top: 40px;
-        z-index: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
       }
     }
 
@@ -304,7 +302,6 @@
       color: #6a1137;
     }
     @media screen and (max-width: 576px) {
-      font-size: 8px !important;
       left: 50%;
       transform: translateX(-50%);
       bottom: 80px;

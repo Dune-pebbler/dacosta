@@ -596,6 +596,60 @@ header .content-header .repeater-wrapper .repeater-item img {
   width: 100%;
   position: relative;
 }
+.hero .images-hero .desktop-images .image-container-left,
+.hero .images-hero .desktop-images .image-container-right {
+  width: 100%;
+  height: 741px;
+  position: relative;
+}
+@media screen and (max-width: 1800px) {
+  .hero .images-hero .desktop-images .image-container-left,
+  .hero .images-hero .desktop-images .image-container-right {
+    max-height: 600px;
+    padding-top: 60px;
+  }
+}
+.hero .images-hero .desktop-images .image-container-left .hero-image-left,
+.hero .images-hero .desktop-images .image-container-right .hero-image-left {
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.hero .images-hero .desktop-images .image-container-left .hero-image-right,
+.hero .images-hero .desktop-images .image-container-right .hero-image-right {
+  position: absolute;
+  top: 40px;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.hero .images-hero .desktop-images .deco-wave-top {
+  position: absolute;
+  top: -15px;
+  right: 0;
+  width: 100%;
+  z-index: 100;
+}
+@media screen and (max-width: 1400px) {
+  .hero .images-hero .desktop-images .deco-wave-top {
+    display: none;
+  }
+}
+.hero .images-hero .desktop-images .deco-wave-bottom {
+  position: absolute;
+  bottom: -100px;
+  right: 0;
+  width: 100%;
+}
+@media screen and (max-width: 1400px) {
+  .hero .images-hero .desktop-images .deco-wave-bottom {
+    display: none;
+  }
+}
 @media screen and (max-width: 1400px) {
   .hero .images-hero .desktop-images {
     display: none;
@@ -673,60 +727,6 @@ header .content-header .repeater-wrapper .repeater-item img {
 }
 .hero .images-hero .mobile-carousel .owl-nav .owl-next {
   right: 20px;
-}
-.hero .images-hero .golfje1 {
-  position: absolute;
-  top: -15px;
-  right: 0;
-  width: 100%;
-  z-index: 100;
-}
-@media screen and (max-width: 1400px) {
-  .hero .images-hero .golfje1 {
-    display: none;
-  }
-}
-.hero .images-hero .golfje2 {
-  position: absolute;
-  bottom: -100px;
-  right: 0;
-  width: 100%;
-}
-@media screen and (max-width: 1400px) {
-  .hero .images-hero .golfje2 {
-    display: none;
-  }
-}
-.hero .images-hero .image-container-left,
-.hero .images-hero .image-container-right {
-  width: calc(50% - 10px);
-  height: 741px;
-  position: relative;
-}
-@media screen and (max-width: 1800px) {
-  .hero .images-hero .image-container-left,
-  .hero .images-hero .image-container-right {
-    max-height: 600px;
-    padding-top: 60px;
-  }
-}
-.hero .images-hero .image-container-left .hero-image-left,
-.hero .images-hero .image-container-right .hero-image-left {
-  z-index: 0;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.hero .images-hero .image-container-left .hero-image-right,
-.hero .images-hero .image-container-right .hero-image-right {
-  position: absolute;
-  top: 40px;
-  z-index: 0;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 .hero .images-hero .text-container {
   position: absolute;
@@ -914,7 +914,6 @@ header .content-header .repeater-wrapper .repeater-item img {
 }
 @media screen and (max-width: 576px) {
   .slider .text-container {
-    font-size: 8px !important;
     left: 50%;
     transform: translateX(-50%);
     bottom: 80px;
