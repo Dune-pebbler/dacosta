@@ -970,6 +970,24 @@ footer {
   }
 }
 
+.middle-footer {
+  padding: 50px 0px;
+}
+.middle-footer .company-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+  transition: all 0.3s ease;
+}
+.middle-footer .company-info a:hover {
+  color: #9e4648;
+}
+.middle-footer .company-info img {
+  height: 90px;
+}
+
 .bottom-footer {
   padding-bottom: 50px;
   padding-top: 40px;
