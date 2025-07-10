@@ -12,7 +12,7 @@
 <body <?php body_class() ?>>
   <header>
     <nav>
-      <div class="container">
+      <div class="container tim">
         <div class="row">
           <div class="col-12 nav-container static">
             <div class="content-header">
