@@ -135,26 +135,26 @@ $role_object->add_cap('edit_theme_options');
 //   //     acf_add_options_sub_page( 'Side Menu' );
 // }
 
-add_filter('wp_sitemaps_enabled', '__return_true');
-
-function remove_unwanted_sitemaps($args, $name)
+function remove_unwanted_sitemaps($provider, $name)
 {
-  // Only allow the page post type
-  if ($name === 'posts' && isset($args['post_type']) && $args['post_type'] !== 'page') {
-    return false;
+  // REMOVE ALL CUSTOM POST TYPES EXCEPT 'page'
+  if ($name === 'posts') {
+    if (!isset($provider['post_type']) || $provider['post_type'] !== 'page') {
+      return false;
+    }
   }
 
-  // Remove users sitemap
+  // REMOVE USERS
   if ($name === 'users') {
     return false;
   }
 
-  // Remove taxonomies (categories, tags, etc.)
+  // REMOVE TAXONOMIES (category, tag, custom)
   if ($name === 'taxonomies') {
     return false;
   }
 
-  return $args;
+  return $provider;
 }
 add_filter('wp_sitemaps_add_provider_args', 'remove_unwanted_sitemaps', 10, 2);
 
