@@ -134,4 +134,28 @@ $role_object->add_cap('edit_theme_options');
 //   acf_add_options_sub_page('Socials');
 //   //     acf_add_options_sub_page( 'Side Menu' );
 // }
+
+add_filter('wp_sitemaps_enabled', '__return_true');
+
+function remove_unwanted_sitemaps($args, $name)
+{
+  // Only allow the page post type
+  if ($name === 'posts' && isset($args['post_type']) && $args['post_type'] !== 'page') {
+    return false;
+  }
+
+  // Remove users sitemap
+  if ($name === 'users') {
+    return false;
+  }
+
+  // Remove taxonomies (categories, tags, etc.)
+  if ($name === 'taxonomies') {
+    return false;
+  }
+
+  return $args;
+}
+add_filter('wp_sitemaps_add_provider_args', 'remove_unwanted_sitemaps', 10, 2);
+
 ?>
