@@ -36,7 +36,7 @@
     </div>
   </div>
   <div class="bottom-footer flex-center">
-    <a href="https://www.ouwehandbouw.nl/privacy-policy/">Privacy statement</a>
+    <a href="#">Privacy statement</a>
   </div>
 </footer>
 <?php wp_footer(); ?>
