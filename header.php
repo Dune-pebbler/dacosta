@@ -10,7 +10,7 @@
 </head>
 
 <body <?php body_class() ?>>
-  <header class="live yo">
+  <header>
     <nav>
       <div class="container">
         <div class="row">

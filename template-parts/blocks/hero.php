@@ -28,12 +28,14 @@ $hero_text_block = get_sub_field('hero_text_block');
             <div class="mobile-carousel owl-carousel owl-theme">
                 <?php if ($hero_image_left): ?>
                     <div class="carousel-item">
-                        <img src="<?= $hero_image_left ?>" alt="<?= $hero_image_left ?>" class="hero-carousel-image">
+                        <img src="<?= $hero_image_left['url'] ?>" alt="<?= $hero_image_left['alt'] ?>"
+                            class="hero-carousel-image">
                     </div>
                 <?php endif ?>
                 <?php if ($hero_image_right): ?>
                     <div class="carousel-item">
-                        <img src="<?= $hero_image_right ?>" alt="<?= $hero_image_left ?>" class="hero-carousel-image">
+                        <img src="<?= $hero_image_right['url'] ?>" alt="<?= $hero_image_left['alt'] ?>"
+                            class="hero-carousel-image">
                     </div>
                 <?php endif ?>
             </div>
