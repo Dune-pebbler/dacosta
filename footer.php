@@ -36,7 +36,7 @@
     </div>
   </div>
   <div class="bottom-footer flex-center">
-    <a href="#">Privacy statement</a>
+    <a href="https://www.zegersbouw.nl/privacy-en-disclaimer/">Privacy statement</a>
   </div>
 </footer>
 <?php wp_footer(); ?>
