@@ -354,19 +354,6 @@
 }
 
 .single-imageblock {
-  padding-top: 80px;
-  padding-bottom: 80px;
-
-  @media screen and (max-width: 767px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-
-  @media screen and (max-width: 576px) {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-
   .row {
     display: flex;
     justify-content: center;
