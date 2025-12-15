@@ -982,6 +982,18 @@ header .content-header .repeater-wrapper .repeater-item img {
     padding-bottom: 40px;
   }
 }
+.single-imageblock .row {
+  display: flex;
+  justify-content: center;
+}
+.single-imageblock .col-12 {
+  max-width: 800px;
+}
+@media screen and (max-width: 992px) {
+  .single-imageblock .col-12 {
+    max-width: 100%;
+  }
+}
 .single-imageblock .image-container {
   width: 100%;
 }

@@ -367,6 +367,19 @@
     padding-bottom: 40px;
   }
 
+  .row {
+    display: flex;
+    justify-content: center;
+  }
+
+  .col-12 {
+    max-width: 800px;
+
+    @media screen and (max-width: 992px) {
+      max-width: 100%;
+    }
+  }
+
   .image-container {
     width: 100%;
 
