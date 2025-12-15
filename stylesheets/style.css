@@ -986,7 +986,6 @@ header .content-header .repeater-wrapper .repeater-item img {
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 10px;
 }
 
 footer {
