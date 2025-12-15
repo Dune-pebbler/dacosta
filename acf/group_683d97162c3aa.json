@@ -302,6 +302,73 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_single_textblock": {
+                    "key": "layout_single_textblock",
+                    "name": "single_textblock",
+                    "label": "Single Textblock",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_single_textblock_content",
+                            "label": "Content",
+                            "name": "content",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "Titel wordt automatisch van de paginatitel gehaald",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "allow_in_bindings": 0,
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_single_imageblock": {
+                    "key": "layout_single_imageblock",
+                    "name": "single_imageblock",
+                    "label": "Single Imageblock",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_single_imageblock_image",
+                            "label": "Image",
+                            "name": "image",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "allow_in_bindings": 0,
+                            "preview_size": "medium"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "min": "",
@@ -327,5 +394,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1749040485
+    "modified": 1734278400
 }

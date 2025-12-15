@@ -19,6 +19,12 @@
         <?php if (get_row_layout() == 'contactform'): ?>
             <?php get_template_part('template-parts/blocks/contactform'); ?>
         <?php endif; ?>
+        <?php if (get_row_layout() == 'single_textblock'): ?>
+            <?php get_template_part('template-parts/blocks/single-textblock'); ?>
+        <?php endif; ?>
+        <?php if (get_row_layout() == 'single_imageblock'): ?>
+            <?php get_template_part('template-parts/blocks/single-imageblock'); ?>
+        <?php endif; ?>
     <?php endwhile; ?>
 
 <?php endif; ?>
