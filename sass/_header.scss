@@ -98,13 +98,24 @@ header {
     }
 
     .menu-left {
-      flex: 1;
+      flex: 0 1 auto;
       justify-content: flex-start;
+      max-width: 35%;
+
+      @media screen and (max-width: 991px) {
+        max-width: 30%;
+      }
     }
 
     .menu-right {
+      flex: 0 1 auto;
       display: flex;
       justify-content: flex-end;
+      max-width: 35%;
+
+      @media screen and (max-width: 991px) {
+        max-width: 30%;
+      }
 
       .nav-menu {
         margin-right: 30px;

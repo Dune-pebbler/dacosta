@@ -605,12 +605,25 @@ header .content-header .menu-right #menu-item-199 a:hover {
   opacity: 1;
 }
 header .content-header .menu-left {
-  flex: 1;
+  flex: 0 1 auto;
   justify-content: flex-start;
+  max-width: 35%;
+}
+@media screen and (max-width: 991px) {
+  header .content-header .menu-left {
+    max-width: 30%;
+  }
 }
 header .content-header .menu-right {
+  flex: 0 1 auto;
   display: flex;
   justify-content: flex-end;
+  max-width: 35%;
+}
+@media screen and (max-width: 991px) {
+  header .content-header .menu-right {
+    max-width: 30%;
+  }
 }
 header .content-header .menu-right .nav-menu {
   margin-right: 30px;
