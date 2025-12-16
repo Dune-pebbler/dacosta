@@ -366,6 +366,32 @@
 
   // Spacing for text+image layout
   .align-items-center {
+    position: relative;
+
+    @media screen and (min-width: 992px) {
+      // Image column container
+      > .col-lg-6:has(.image-wrapper) {
+        position: relative;
+      }
+
+      // Image wrapper positioned absolutely
+      .image-wrapper {
+        position: absolute;
+        top: 0;
+        left: 15px;
+        right: 15px;
+        bottom: 0;
+        margin-top: 0;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 8px;
+        }
+      }
+    }
+
     > .col-lg-6:first-child {
       @media screen and (min-width: 992px) {
         padding-right: 30px;
