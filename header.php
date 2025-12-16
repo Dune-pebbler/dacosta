@@ -16,6 +16,13 @@
         <div class="row">
           <div class="col-12 nav-container static">
             <div class="content-header">
+              <!-- Hamburger Menu Button (Mobile Only) -->
+              <button class="hamburger-menu" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+
               <div class="menu-left">
                 <?php
                 wp_nav_menu(array(
@@ -61,9 +68,46 @@
                 </div>
               <?php endif; ?>
             </div>
+
+            <!-- Mobile Menu Overlay -->
+            <div class="mobile-menu-overlay">
+              <div class="mobile-menu-content">
+                <?php
+                wp_nav_menu(array(
+                  'theme_location' => 'header-left',
+                  'container' => false,
+                  'menu_class' => 'mobile-nav-menu',
+                  'fallback_cb' => false
+                ));
+                wp_nav_menu(array(
+                  'theme_location' => 'header-right',
+                  'container' => false,
+                  'menu_class' => 'mobile-nav-menu',
+                  'fallback_cb' => false
+                ));
+                ?>
+                <?php if (have_rows('nav_socials', 'option')): ?>
+                  <div class="mobile-socials">
+                    <?php while (have_rows('nav_socials', 'option')):
+                      the_row();
+                      $social_logo = get_sub_field('social_logo', 'option');
+                      $social_link = get_sub_field('social_link', 'option');
+                      ?>
+                      <?php if ($social_logo): ?>
+                        <a href="<?= $social_link['url']; ?>" target="<?= $social_link['target']; ?>">
+                          <img src="<?= $social_logo['url']; ?>" alt="<?= $social_logo['alt']; ?>">
+                        </a>
+                      <?php endif; ?>
+                    <?php endwhile; ?>
+                  </div>
+                <?php endif; ?>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </nav>
+    <!-- Mobile Menu Backdrop -->
+    <div class="mobile-menu-backdrop"></div>
   </header>
   <main>

@@ -8,14 +8,27 @@ jQuery(window).scroll(function () {
 jQuery(window).resize(function () {});
 
 function setHamburgerActiveToggle() {
-  jQuery(".hamburger").on("click", function () {
-    jQuery(".hamburger").addClass("is-active");
-    jQuery("#nav-items").addClass("is-active");
-    jQuery("body, html").addClass("stop-scrolling");
+  // Toggle mobile menu
+  jQuery(".hamburger-menu").on("click", function () {
+    jQuery(this).toggleClass("active");
+    jQuery(".mobile-menu-overlay").toggleClass("active");
+    jQuery(".mobile-menu-backdrop").toggleClass("active");
+    jQuery("body, html").toggleClass("stop-scrolling");
   });
-  jQuery("#cross").on("click", function () {
-    jQuery(".hamburger").removeClass("is-active");
-    jQuery("#nav-items").removeClass("is-active");
+
+  // Close menu when clicking backdrop
+  jQuery(".mobile-menu-backdrop").on("click", function () {
+    jQuery(".hamburger-menu").removeClass("active");
+    jQuery(".mobile-menu-overlay").removeClass("active");
+    jQuery(this).removeClass("active");
+    jQuery("body, html").removeClass("stop-scrolling");
+  });
+
+  // Close menu when clicking a menu link
+  jQuery(".mobile-nav-menu a").on("click", function () {
+    jQuery(".hamburger-menu").removeClass("active");
+    jQuery(".mobile-menu-overlay").removeClass("active");
+    jQuery(".mobile-menu-backdrop").removeClass("active");
     jQuery("body, html").removeClass("stop-scrolling");
   });
 }
