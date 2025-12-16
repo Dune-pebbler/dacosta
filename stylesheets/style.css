@@ -965,6 +965,38 @@ header .content-header .repeater-wrapper .repeater-item img {
 .single-textblock .content p {
   margin-bottom: 20px;
 }
+.single-textblock .image-wrapper img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+@media screen and (max-width: 991px) {
+  .single-textblock .image-wrapper {
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .single-textblock .align-items-center > .col-lg-6:first-child {
+    padding-right: 30px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .single-textblock .align-items-center > .col-lg-6:last-child {
+    padding-left: 30px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .single-textblock .align-items-center.flex-row-reverse > .col-lg-6:first-child {
+    padding-left: 30px;
+    padding-right: 15px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .single-textblock .align-items-center.flex-row-reverse > .col-lg-6:last-child {
+    padding-right: 30px;
+    padding-left: 15px;
+  }
+}
 
 .single-imageblock .row {
   display: flex;
