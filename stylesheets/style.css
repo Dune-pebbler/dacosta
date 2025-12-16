@@ -614,6 +614,11 @@ header .content-header .menu-left {
     max-width: 30%;
   }
 }
+@media screen and (max-width: 768px) {
+  header .content-header .menu-left {
+    display: none;
+  }
+}
 header .content-header .menu-right {
   flex: 0 1 auto;
   display: flex;
@@ -623,6 +628,11 @@ header .content-header .menu-right {
 @media screen and (max-width: 991px) {
   header .content-header .menu-right {
     max-width: 30%;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .content-header .menu-right {
+    display: none;
   }
 }
 header .content-header .menu-right .nav-menu {
