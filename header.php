@@ -16,10 +16,29 @@
         <div class="row">
           <div class="col-12 nav-container static">
             <div class="content-header">
-              <div class="spacer-left"></div>
+              <div class="menu-left">
+                <?php
+                wp_nav_menu(array(
+                  'theme_location' => 'header-left',
+                  'container' => false,
+                  'menu_class' => 'nav-menu',
+                  'fallback_cb' => false
+                ));
+                ?>
+              </div>
               <div class="logo">
                 <?php $header_logo = get_field('header_logo', 'option'); ?>
                 <img src="<?= $header_logo['url']; ?>" alt="<?= $header_logo['alt']; ?>">
+              </div>
+              <div class="menu-right">
+                <?php
+                wp_nav_menu(array(
+                  'theme_location' => 'header-right',
+                  'container' => false,
+                  'menu_class' => 'nav-menu',
+                  'fallback_cb' => false
+                ));
+                ?>
               </div>
 
               <?php if (have_rows('nav_socials', 'option')): ?>
