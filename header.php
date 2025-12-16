@@ -27,8 +27,10 @@
                 ?>
               </div>
               <div class="logo">
-                <?php $header_logo = get_field('header_logo', 'option'); ?>
-                <img src="<?= $header_logo['url']; ?>" alt="<?= $header_logo['alt']; ?>">
+                <a href="<?= home_url('/'); ?>">
+                  <?php $header_logo = get_field('header_logo', 'option'); ?>
+                  <img src="<?= $header_logo['url']; ?>" alt="<?= $header_logo['alt']; ?>">
+                </a>
               </div>
               <div class="menu-right">
                 <?php
