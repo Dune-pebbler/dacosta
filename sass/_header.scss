@@ -190,7 +190,7 @@ header {
     .hamburger-menu {
       display: none;
       position: absolute;
-      left: 20px;
+      right: 20px;
       top: 50%;
       transform: translateY(-50%);
       flex-direction: column;
@@ -227,6 +227,13 @@ header {
         span:nth-child(3) {
           transform: rotate(-45deg) translate(8px, -8px);
         }
+      }
+    }
+
+    // Hide desktop menu and social icons on mobile
+    .repeater-wrapper {
+      @media screen and (max-width: 768px) {
+        display: none !important;
       }
     }
   }

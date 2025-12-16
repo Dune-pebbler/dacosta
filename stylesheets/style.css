@@ -693,7 +693,7 @@ header .content-header .repeater-wrapper .repeater-item img {
 header .content-header .hamburger-menu {
   display: none;
   position: absolute;
-  left: 20px;
+  right: 20px;
   top: 50%;
   transform: translateY(-50%);
   flex-direction: column;
@@ -726,6 +726,11 @@ header .content-header .hamburger-menu.active span:nth-child(2) {
 }
 header .content-header .hamburger-menu.active span:nth-child(3) {
   transform: rotate(-45deg) translate(8px, -8px);
+}
+@media screen and (max-width: 768px) {
+  header .content-header .repeater-wrapper {
+    display: none !important;
+  }
 }
 header .mobile-menu-overlay {
   position: fixed;
