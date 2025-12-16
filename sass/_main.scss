@@ -335,17 +335,18 @@
     padding-bottom: 40px;
   }
 
-  h2 {
-    text-align: center;
-    margin-bottom: 30px;
-
-    @media screen and (max-width: 576px) {
-      margin-bottom: 20px;
-    }
-  }
-
   .content {
     text-align: left;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      text-align: left;
+      margin-bottom: 20px;
+    }
 
     p {
       margin-bottom: 20px;

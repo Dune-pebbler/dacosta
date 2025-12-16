@@ -315,7 +315,7 @@
                             "name": "content",
                             "aria-label": "",
                             "type": "wysiwyg",
-                            "instructions": "Titel wordt automatisch van de paginatitel gehaald",
+                            "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -419,6 +419,52 @@
                             "ui": 1,
                             "ui_on_text": "",
                             "ui_off_text": ""
+                        },
+                        {
+                            "key": "field_single_textblock_padding_top",
+                            "label": "Padding Top (px)",
+                            "name": "padding_top",
+                            "aria-label": "",
+                            "type": "number",
+                            "instructions": "Custom padding top in pixels. Leave empty to use default.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "min": 0,
+                            "max": "",
+                            "allow_in_bindings": 0,
+                            "placeholder": "80",
+                            "step": "",
+                            "prepend": "",
+                            "append": "px"
+                        },
+                        {
+                            "key": "field_single_textblock_padding_bottom",
+                            "label": "Padding Bottom (px)",
+                            "name": "padding_bottom",
+                            "aria-label": "",
+                            "type": "number",
+                            "instructions": "Custom padding bottom in pixels. Leave empty to use default.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "min": 0,
+                            "max": "",
+                            "allow_in_bindings": 0,
+                            "placeholder": "80",
+                            "step": "",
+                            "prepend": "",
+                            "append": "px"
                         }
                     ],
                     "min": "",
