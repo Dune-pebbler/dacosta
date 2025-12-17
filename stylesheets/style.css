@@ -729,7 +729,7 @@ header .content-header .hamburger-menu span {
   transition: all 0.3s ease;
 }
 header .content-header .hamburger-menu.active span:nth-child(1) {
-  transform: rotate(45deg) translate(8px, 8px);
+  transform: rotate(45deg) translate(5px, 3px);
 }
 header .content-header .hamburger-menu.active span:nth-child(2) {
   opacity: 0;
