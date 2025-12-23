@@ -6,13 +6,10 @@ html.stop-scrolling {
 }
 
 .hero {
-  padding-top: 90px;
+  padding-top: 40px;
   padding-bottom: 160px;
-  @media screen and (max-width: 1400px) {
-    padding-top: 170px;
-  }
   @media screen and (max-width: 576px) {
-    padding-top: 130px;
+    padding-top: 20px;
     padding-bottom: 80px;
   }
 

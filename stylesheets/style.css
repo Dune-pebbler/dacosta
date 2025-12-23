@@ -500,14 +500,13 @@ html.menu-open {
 }
 
 header {
-  position: absolute;
   width: 100%;
-  top: 0px;
   background-color: #fff;
-  width: 100%;
+  padding-top: 50px;
 }
 @media screen and (max-width: 576px) {
   header {
+    padding-top: 20px;
     padding-bottom: 50px;
   }
 }
@@ -516,13 +515,12 @@ header .content-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 178px;
+  padding-bottom: 50px;
   z-index: 1000;
 }
 @media screen and (max-width: 576px) {
   header .content-header {
-    height: 120px;
-    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
 header .content-header .menu-left .nav-menu,
@@ -847,17 +845,12 @@ html.stop-scrolling {
 }
 
 .hero {
-  padding-top: 90px;
+  padding-top: 40px;
   padding-bottom: 160px;
-}
-@media screen and (max-width: 1400px) {
-  .hero {
-    padding-top: 170px;
-  }
 }
 @media screen and (max-width: 576px) {
   .hero {
-    padding-top: 130px;
+    padding-top: 20px;
     padding-bottom: 80px;
   }
 }

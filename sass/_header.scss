@@ -1,10 +1,9 @@
 header {
-  position: absolute;
   width: 100%;
-  top: 0px;
   background-color: $white;
-  width: 100%;
+  padding-top: 50px;
   @media screen and (max-width: 576px) {
+    padding-top: 20px;
     padding-bottom: 50px;
   }
 
@@ -13,11 +12,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 178px;
+    padding-bottom: 50px;
     z-index: 1000;
     @media screen and (max-width: 576px) {
-      height: 120px;
-      padding-top: 20px;
+      padding-bottom: 20px;
     }
 
     .menu-left,
