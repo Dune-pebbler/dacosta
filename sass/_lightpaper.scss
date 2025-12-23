@@ -3,7 +3,7 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-33.333%);
+    transform: translateX(-6.666%);
   }
 }
 
@@ -26,7 +26,7 @@
   .lightpaper-scroll-track {
     display: flex;
     width: fit-content;
-    animation: scroll-left 20s linear infinite;
+    animation: scroll-left 8s linear infinite;
 
     &:hover {
       animation-play-state: paused;

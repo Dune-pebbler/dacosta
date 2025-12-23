@@ -504,7 +504,7 @@ html.menu-open {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-33.333%);
+    transform: translateX(-6.666%);
   }
 }
 .lightpaper-banner {
@@ -527,7 +527,7 @@ html.menu-open {
   display: flex;
   width: -moz-fit-content;
   width: fit-content;
-  animation: scroll-left 20s linear infinite;
+  animation: scroll-left 8s linear infinite;
 }
 .lightpaper-banner .lightpaper-scroll-track:hover {
   animation-play-state: paused;

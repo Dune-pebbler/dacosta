@@ -14,15 +14,11 @@
     <div class="lightpaper-banner">
       <div class="lightpaper-scroll-wrapper">
         <div class="lightpaper-scroll-track">
-          <div class="lightpaper-content">
-            <?php echo get_field('lightpaper_content', 'option'); ?>
-          </div>
-          <div class="lightpaper-content" aria-hidden="true">
-            <?php echo get_field('lightpaper_content', 'option'); ?>
-          </div>
-          <div class="lightpaper-content" aria-hidden="true">
-            <?php echo get_field('lightpaper_content', 'option'); ?>
-          </div>
+          <?php for ($i = 0; $i < 15; $i++): ?>
+            <div class="lightpaper-content" <?php if ($i > 0) echo 'aria-hidden="true"'; ?>>
+              <?php echo get_field('lightpaper_content', 'option'); ?>
+            </div>
+          <?php endfor; ?>
         </div>
       </div>
     </div>
