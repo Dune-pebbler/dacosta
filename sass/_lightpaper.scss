@@ -1,0 +1,43 @@
+.lightpaper-banner {
+  background-color: #f8f8f8;
+  border-bottom: 1px solid rgba($black, 0.1);
+  padding: 15px 0;
+
+  @media screen and (max-width: 576px) {
+    padding: 12px 0;
+  }
+
+  .lightpaper-content {
+    text-align: center;
+    color: $btn-color1;
+    font-family: $font2;
+    font-size: 14px;
+    line-height: 1.6;
+
+    @media screen and (max-width: 576px) {
+      font-size: 13px;
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+      color: $btn-color1;
+    }
+
+    a {
+      color: $btn-color1;
+      font-weight: 600;
+      text-decoration: underline;
+      transition: opacity 0.3s ease;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+
+    strong,
+    b {
+      font-weight: 600;
+    }
+  }
+}

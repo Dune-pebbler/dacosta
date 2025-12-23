@@ -1,0 +1,75 @@
+{
+    "key": "group_lightpaper_banner",
+    "title": "Lightpaper Banner Settings",
+    "fields": [
+        {
+            "key": "field_lightpaper_enable",
+            "label": "Show Lightpaper Banner",
+            "name": "lightpaper_enable",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "Enable or disable the lightpaper banner at the top of the site",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Enabled",
+            "ui_off_text": "Disabled",
+            "allow_in_bindings": 0
+        },
+        {
+            "key": "field_lightpaper_content",
+            "label": "Banner Content",
+            "name": "lightpaper_content",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "Enter the text content for the lightpaper banner",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_lightpaper_enable",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "delay": 0,
+            "allow_in_bindings": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "site-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1734948000
+}

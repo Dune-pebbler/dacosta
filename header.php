@@ -10,6 +10,19 @@
 </head>
 
 <body <?php body_class() ?>>
+  <?php if (get_field('lightpaper_enable', 'option')): ?>
+    <div class="lightpaper-banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="lightpaper-content">
+              <?php echo get_field('lightpaper_content', 'option'); ?>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <?php endif; ?>
   <header>
     <nav>
       <div class="container">
