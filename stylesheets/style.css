@@ -508,7 +508,7 @@ html.menu-open {
   }
 }
 .lightpaper-banner {
-  background-color: #f8f8f8;
+  background-color: #192f2f;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding: 15px 0;
   overflow: hidden;
@@ -551,7 +551,8 @@ html.menu-open {
   display: inline;
   margin: 0;
   padding: 0;
-  color: #192f2f;
+  color: white;
+  text-transform: uppercase;
 }
 .lightpaper-banner .lightpaper-content a {
   color: #192f2f;
