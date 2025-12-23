@@ -10,12 +10,15 @@
 </head>
 
 <body <?php body_class() ?>>
-  <?php if (get_field('lightpaper_enable', 'option')): ?>
-    <div class="lightpaper-banner">
+  <?php if (get_field('lightpaper_enable', 'option')):
+    $bg_color = get_field('lightpaper_bg_color', 'option') ?: '#192f2f';
+    $text_color = get_field('lightpaper_text_color', 'option') ?: '#ffffff';
+  ?>
+    <div class="lightpaper-banner" style="background-color: <?php echo esc_attr($bg_color); ?>;">
       <div class="lightpaper-scroll-wrapper">
         <div class="lightpaper-scroll-track">
           <?php for ($i = 0; $i < 15; $i++): ?>
-            <div class="lightpaper-content" <?php if ($i > 0) echo 'aria-hidden="true"'; ?>>
+            <div class="lightpaper-content" style="color: <?php echo esc_attr($text_color); ?>;" <?php if ($i > 0) echo 'aria-hidden="true"'; ?>>
               <?php echo get_field('lightpaper_content', 'option'); ?>
             </div>
           <?php endfor; ?>

@@ -8,7 +8,6 @@
 }
 
 .lightpaper-banner {
-  background-color: #192f2f;
   border-bottom: 1px solid rgba($black, 0.1);
   padding: 15px 0;
   overflow: hidden;
@@ -37,7 +36,6 @@
     flex-shrink: 0;
     white-space: nowrap;
     padding: 0 50px;
-    color: $btn-color1;
     font-family: $font2;
     font-size: 14px;
     line-height: 1.6;
@@ -51,12 +49,10 @@
       display: inline;
       margin: 0;
       padding: 0;
-      color: white;
       text-transform: uppercase;
     }
 
     a {
-      color: $btn-color1;
       font-weight: 600;
       text-decoration: underline;
       transition: opacity 0.3s ease;

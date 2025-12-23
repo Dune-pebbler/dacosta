@@ -3,6 +3,24 @@
     "title": "Lightpaper Banner Settings",
     "fields": [
         {
+            "key": "field_lightpaper_tab_content",
+            "label": "Content",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
             "key": "field_lightpaper_enable",
             "label": "Show Lightpaper Banner",
             "name": "lightpaper_enable",
@@ -50,6 +68,78 @@
             "toolbar": "basic",
             "media_upload": 0,
             "delay": 0,
+            "allow_in_bindings": 0
+        },
+        {
+            "key": "field_lightpaper_tab_styling",
+            "label": "Styling",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_lightpaper_bg_color",
+            "label": "Background Color",
+            "name": "lightpaper_bg_color",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "Choose the background color for the banner",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_lightpaper_enable",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#192f2f",
+            "enable_opacity": 0,
+            "return_format": "string",
+            "allow_in_bindings": 0
+        },
+        {
+            "key": "field_lightpaper_text_color",
+            "label": "Text Color",
+            "name": "lightpaper_text_color",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "Choose the text color for the banner",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_lightpaper_enable",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#ffffff",
+            "enable_opacity": 0,
+            "return_format": "string",
             "allow_in_bindings": 0
         }
     ],
