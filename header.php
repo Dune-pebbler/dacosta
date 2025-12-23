@@ -18,7 +18,7 @@
       <div class="lightpaper-scroll-wrapper">
         <div class="lightpaper-scroll-track">
           <?php for ($i = 0; $i < 15; $i++): ?>
-            <div class="lightpaper-content" style="color: <?php echo esc_attr($text_color); ?>;" <?php if ($i > 0) echo 'aria-hidden="true"'; ?>>
+            <div class="lightpaper-content" style="color: <?php echo esc_attr($text_color); ?> !important;" <?php if ($i > 0) echo 'aria-hidden="true"'; ?>>
               <?php echo get_field('lightpaper_content', 'option'); ?>
             </div>
           <?php endfor; ?>

@@ -50,12 +50,14 @@
       margin: 0;
       padding: 0;
       text-transform: uppercase;
+      color: inherit !important;
     }
 
     a {
       font-weight: 600;
       text-decoration: underline;
       transition: opacity 0.3s ease;
+      color: inherit !important;
 
       &:hover {
         opacity: 0.7;
@@ -65,6 +67,11 @@
     strong,
     b {
       font-weight: 600;
+      color: inherit !important;
+    }
+
+    * {
+      color: inherit !important;
     }
   }
 }

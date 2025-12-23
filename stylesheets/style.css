@@ -550,11 +550,13 @@ html.menu-open {
   margin: 0;
   padding: 0;
   text-transform: uppercase;
+  color: inherit !important;
 }
 .lightpaper-banner .lightpaper-content a {
   font-weight: 600;
   text-decoration: underline;
   transition: opacity 0.3s ease;
+  color: inherit !important;
 }
 .lightpaper-banner .lightpaper-content a:hover {
   opacity: 0.7;
@@ -562,6 +564,10 @@ html.menu-open {
 .lightpaper-banner .lightpaper-content strong,
 .lightpaper-banner .lightpaper-content b {
   font-weight: 600;
+  color: inherit !important;
+}
+.lightpaper-banner .lightpaper-content * {
+  color: inherit !important;
 }
 
 header {
