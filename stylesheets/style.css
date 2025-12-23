@@ -589,6 +589,11 @@ header .content-header {
   padding-bottom: 50px;
   z-index: 1000;
 }
+@media screen and (max-width: 768px) {
+  header .content-header {
+    justify-content: flex-start;
+  }
+}
 @media screen and (max-width: 576px) {
   header .content-header {
     padding-bottom: 20px;
@@ -720,10 +725,17 @@ header .content-header .logo {
   display: inline-block;
   z-index: 1000;
 }
+@media screen and (max-width: 768px) {
+  header .content-header .logo {
+    position: relative;
+    left: 0;
+    transform: none;
+    width: 150px;
+  }
+}
 @media screen and (max-width: 576px) {
   header .content-header .logo {
-    transform: translateX(-50%);
-    width: 50%;
+    width: 120px;
   }
 }
 header .content-header .logo a {

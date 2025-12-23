@@ -14,6 +14,11 @@ header {
     align-items: center;
     padding-bottom: 50px;
     z-index: 1000;
+
+    @media screen and (max-width: 768px) {
+      justify-content: flex-start;
+    }
+
     @media screen and (max-width: 576px) {
       padding-bottom: 20px;
     }
@@ -140,9 +145,15 @@ header {
       display: inline-block;
       z-index: 1000;
 
+      @media screen and (max-width: 768px) {
+        position: relative;
+        left: 0;
+        transform: none;
+        width: 150px;
+      }
+
       @media screen and (max-width: 576px) {
-        transform: translateX(-50%);
-        width: 50%;
+        width: 120px;
       }
 
       a {
