@@ -12,12 +12,16 @@
 <body <?php body_class() ?>>
   <?php if (get_field('lightpaper_enable', 'option')): ?>
     <div class="lightpaper-banner">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="lightpaper-content">
-              <?php echo get_field('lightpaper_content', 'option'); ?>
-            </div>
+      <div class="lightpaper-scroll-wrapper">
+        <div class="lightpaper-scroll-track">
+          <div class="lightpaper-content">
+            <?php echo get_field('lightpaper_content', 'option'); ?>
+          </div>
+          <div class="lightpaper-content" aria-hidden="true">
+            <?php echo get_field('lightpaper_content', 'option'); ?>
+          </div>
+          <div class="lightpaper-content" aria-hidden="true">
+            <?php echo get_field('lightpaper_content', 'option'); ?>
           </div>
         </div>
       </div>

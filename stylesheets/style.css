@@ -499,18 +499,43 @@ html.menu-open {
   transform: translateY(0);
 }
 
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-33.333%);
+  }
+}
 .lightpaper-banner {
   background-color: #f8f8f8;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding: 15px 0;
+  overflow: hidden;
 }
 @media screen and (max-width: 576px) {
   .lightpaper-banner {
     padding: 12px 0;
   }
 }
+.lightpaper-banner .lightpaper-scroll-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.lightpaper-banner .lightpaper-scroll-track {
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  animation: scroll-left 20s linear infinite;
+}
+.lightpaper-banner .lightpaper-scroll-track:hover {
+  animation-play-state: paused;
+}
 .lightpaper-banner .lightpaper-content {
-  text-align: center;
+  flex-shrink: 0;
+  white-space: nowrap;
+  padding: 0 50px;
   color: #192f2f;
   font-family: "neue-haas-unica", sans-serif;
   font-size: 14px;
@@ -519,9 +544,11 @@ html.menu-open {
 @media screen and (max-width: 576px) {
   .lightpaper-banner .lightpaper-content {
     font-size: 13px;
+    padding: 0 30px;
   }
 }
 .lightpaper-banner .lightpaper-content p {
+  display: inline;
   margin: 0;
   padding: 0;
   color: #192f2f;
