@@ -2,9 +2,12 @@ header {
   width: 100%;
   background-color: $white;
   padding-top: 50px;
-  @media screen and (max-width: 576px) {
+  @media screen and (max-width: 768px) {
     padding-top: 20px;
-    padding-bottom: 50px;
+  }
+
+  @media screen and (max-width: 576px) {
+    padding-top: 10px;
   }
 
   .content-header {
@@ -17,10 +20,11 @@ header {
 
     @media screen and (max-width: 768px) {
       justify-content: flex-start;
+      padding-bottom: 20px;
     }
 
     @media screen and (max-width: 576px) {
-      padding-bottom: 20px;
+      padding-bottom: 10px;
     }
 
     .menu-left,
@@ -149,11 +153,11 @@ header {
         position: relative;
         left: 0;
         transform: none;
-        width: 150px;
+        width: 220px;
       }
 
       @media screen and (max-width: 576px) {
-        width: 120px;
+        width: 180px;
       }
 
       a {
